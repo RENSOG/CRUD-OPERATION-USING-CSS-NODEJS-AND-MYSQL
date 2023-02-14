@@ -1,0 +1,32 @@
+<h3 style="text-align:center">ADD new student</h3>
+{{#if masg}}
+<div class="alert">{{masg}}</div>
+{{/if}}
+
+<div class="container-fluid">
+
+  <form method="post" action="/adduser" style="background-color:rgb(34, 159, 115); margin: top 10px;">
+  
+    <div class="form-group"  style="margin:50px">
+        <label for="name">NAME</label>
+        <input type="text" name="name">
+    </div>
+
+    <div class="form-group" style="margin:50px">
+        <label for="age">AGE</label>
+        <input type="text" name="age">
+    </div>
+
+    <div class="form-group" style="margin:50px">
+        <label for="city">CITY</label>
+        <input type="text" name="city">
+    </div>
+    <div class="form-group" style="margin:50px">
+     <button type="submit">SAVE</button>
+     <a href="/">View all</a>
+    </div>
+
+  </form>
+  </div>
+
+  

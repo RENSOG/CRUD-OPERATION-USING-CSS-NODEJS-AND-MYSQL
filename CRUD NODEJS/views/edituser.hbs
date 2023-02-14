@@ -1,0 +1,34 @@
+<h3 style="text-align:center">EDit new student</h3>
+{{#if masg}}
+<div class="alert">{{masg}}</div>
+{{/if}}
+{{#each rows}}
+
+<div class="container-fluid">
+
+  <form method="post" action="/edituser/{{this.ID}}" autocomplete="false" style="background-color:rgb(34, 159, 115); margin: top 10px;">
+  
+    <div class="form-group"  style="margin:50px">
+        <label for="name">NAME</label>
+        <input type="text" name="name" value="{{this.NAM}}">
+    </div>
+
+    <div class="form-group" style="margin:50px">
+        <label for="age">AGE</label>
+        <input type="text" name="age"  value="{{this.AGE}}">
+    </div>
+
+    <div class="form-group" style="margin:50px">
+        <label for="city">CITY</label>
+        <input type="text" name="city"  value="{{this.CITY}}">
+    </div>
+    <div class="form-group" style="margin:50px">
+     <button type="submit">SAVE CHANGES</button>
+     <a href="/">View all</a>
+    </div>
+
+  </form>
+  </div>
+  {{/each}}
+
+  
